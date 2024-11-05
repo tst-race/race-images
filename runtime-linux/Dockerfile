@@ -203,7 +203,7 @@ RUN PYTHON_VERSION="3.7.17" && \
         python3-wheel=0.34.2-* \
         python3.7-tk=${PYTHON_VERSION}-* \
         python3.7-distutils=${PYTHON_VERSION}-* && \
-    wget https://bootstrap.pypa.io/get-pip.py && \
+    wget https://bootstrap.pypa.io/pip/3.7/get-pip.py && \
     python3.7 get-pip.py && \
     python3.7 -m pip install --user --no-cache-dir --upgrade --force-reinstall pip && \
     update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1 && \
