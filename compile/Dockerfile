@@ -105,7 +105,7 @@ RUN apt-get update -y && \
             apt-get install -y --no-install-recommends \
                 libpython3.7-dev:arm64=${PYTHON_VERSION}-* ;; \
     esac && \
-    wget https://bootstrap.pypa.io/get-pip.py && \
+    wget https://bootstrap.pypa.io/pip/3.7/get-pip.py && \
     python3.7 get-pip.py && \
     python3.7 -m pip install --user --no-cache-dir --upgrade --force-reinstall pip && \
     update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1 && \
